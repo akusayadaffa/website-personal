@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tooly</h1>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#text-tools">Text Tools</a></li>
+                <li><a href="#image-tools">Image Tools</a></li>
+                <li><a href="#calculation-tools">Calculation Tools</a></li>
+                <li><a href="#unit-converter">Unit Converter</a></li>
+                <li><a href="#dev-tools">Dev Tools</a></li>
+                <li><a href="#color-tools">Color Tools</a></li>
+                <li><a href="#randomizers">Randomizers</a></li>
+                <li><a href="#generators">Generators</a></li>
+                <li><a href="#general-tools">General Tools</a></li>
+            </ul>
+        </nav>
+        <section id="tools">
+            <!-- Text Tools -->
+            <div class="tool" id="text-tools">
+                <h2>Text Tools</h2>
+                <div class="sub-tool">
+                    <h3>Basic Tools</h3>
+                    <textarea id="text-input-basic" rows="5" cols="30"></textarea>
+                    <button id="uppercase">Uppercase</button>
+                    <button id="lowercase">Lowercase</button>
+                </div>
+                <div class="sub-tool">
+                    <h3>Remove Tools</h3>
+                    <textarea id="text-input-remove" rows="5" cols="30"></textarea>
+                    <button id="remove-spaces">Remove Spaces</button>
+                    <button id="remove-lines">Remove Lines</button>
+                </div>
+            </div>
+            <!-- Image Tools -->
+            <div class="tool" id="image-tools">
+                <h2>Image Tools</h2>
+                <input type="file" id="image-input">
+                <div id="image-preview"></div>
+            </div>
+            <!-- Calculation Tools -->
+            <div class="tool" id="calculation-tools">
+                <h2>Calculation Tools</h2>
+                <div id="calculatorContainer">
+                    <input type="text" id="display" disabled>
+                    <div id="buttons">
+                        <button class="calc-btn" data-value="7">7</button>
+                        <button class="calc-btn" data-value="8">8</button>
+                        <button class="calc-btn" data-value="9">9</button>
+                        <button class="calc-btn" data-value="/">/</button>
+                        <button class="calc-btn" data-value="4">4</button>
+                        <button class="calc-btn" data-value="5">5</button>
+                        <button class="calc-btn" data-value="6">6</button>
+                        <button class="calc-btn" data-value="*">*</button>
+                        <button class="calc-btn" data-value="1">1</button>
+                        <button class="calc-btn" data-value="2">2</button>
+                        <button class="calc-btn" data-value="3">3</button>
+                        <button class="calc-btn" data-value="-">-</button>
+                        <button class="calc-btn" data-value="0">0</button>
+                        <button class="calc-btn" data-value=".">.</button>
+                        <button class="calc-btn" data-value="=">=</button>
+                        <button class="calc-btn" data-value="+">+</button>
+                        <button class="calc-btn" data-value="C">C</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Unit Converter -->
+            <!-- Unit Converter Tool -->
+        <div class="tool">
+            <h3>Unit Converter</h3>
+            <input type="number" id="unit-input" placeholder="Enter value">
+            <select id="unit-from">
+                <option value="meters">Meters</option>
+                <option value="kilometers">Kilometers</option>
+                <option value="centimeters">Centimeters</option>
+                <option value="milliliters">Milliliters</option>
+                <option value="liters">Liters</option>
+                <option value="grams">Grams</option>
+                <option value="kilograms">Kilograms</option>
+                <option value="milligrams">Milligrams</option>
+            </select>
+            <select id="unit-to">
+                <option value="meters">Meters</option>
+                <option value="kilometers">Kilometers</option>
+                <option value="centimeters">Centimeters</option>
+                <option value="milliliters">Milliliters</option>
+                <option value="liters">Liters</option>
+                <option value="grams">Grams</option>
+                <option value="kilograms">Kilograms</option>
+                <option value="milligrams">Milligrams</option>
+            </select>
+            <button id="convert">Convert</button>
+            <div id="conversion-result"></div>
+        </div>
+    </div>
+    
+            <!-- Dev Tools -->
+            <div class="tool" id="dev-tools">
+                <h2>Dev Tools</h2>
+                <!-- Add specific developer tools here -->
+            </div>
+            <!-- Color Tools -->
+            <div class="tool" id="color-tools">
+                <h2>Color Tools</h2>
+                <input type="color" id="color-picker">
+                <div id="color-preview"></div>
+            </div>
+            <!-- Randomizers -->
+            <div class="tool" id="randomizers">
+                <h2>Randomizers</h2>
+                <button id="random-number">Random Number</button>
+                <div id="random-number-result"></div>
+                <button id="flip-coin">Flip Coin</button>
+                <div id="flip-coin-result"></div>
+                <button id="spin-bottle">Spin Bottle</button>
+                <div id="spin-bottle-result"></div>
+                <button id="lucky-wheel">Lucky Wheel</button>
+                <div id="lucky-wheel-result"></div>
+                <button id="rock-paper-scissors">Rock Paper Scissors</button>
+                <div id="rock-paper-scissors-result"></div>
+            </div>
+            <!-- Generators -->
+            <div class="tool" id="generators">
+                <h2>Generators</h2>
+                <button id="generate-password">Generate Password</button>
+                <div id="generated-password"></div>
+            </div>
+            <!-- General Tools -->
+            <div class="tool" id="general-tools">
+                <h2>General Tools</h2>
+                <button id="date-time">Current Date and Time</button>
+                <div id="date-time-result"></div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
